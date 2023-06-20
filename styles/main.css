@@ -1,0 +1,153 @@
+:root{
+    --mainTextColour:#fff;
+    --secondaryTextColour:#adb0b1;
+    --mainLinkColour: rgb(30, 190, 214);
+    --mainBorderColour: #2b3031;
+    --mainBgColour:#131415;
+}
+
+*{
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.5em;
+    box-sizing: border-box;
+    color: var(--mainTextColour);
+}
+
+body{
+    background-color: var(--mainBgColour);
+}
+
+p, span, li{
+    color: var(--secondaryTextColour);
+    font-size: 1em;
+}
+
+a{
+    text-decoration: none;
+    color: var(--mainLinkColour);
+    font-size: 500;
+}
+
+li{
+    line-height: 1.9em;
+}
+
+#container--main{
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.section--page{
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#wrapper--hero{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+#user-name{
+    font-size: 3em;
+    line-height: 1em;
+}
+
+#bio, a{
+    font-weight: 300;
+}
+
+#profile-pic{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+#email{
+    color: var(--mainTextColour);
+}
+
+#socials--list{
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 1em;
+    flex-wrap: wrap;
+}
+
+#socials--list a{
+    font-size: 0.9em;
+    color: var(--secondaryTextColour);
+    transition: 0.3s;
+}
+
+#socials--list a:hover{
+    color: var(--mainLinkColour);
+}
+
+#qualifications--list{
+    list-style: none;
+}
+
+#wrapper--techstack__items{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    font-size: 0.9em;
+}
+
+.card--techstack{
+    border: 1px solid var(--mainBorderColour);
+    padding: 0.5em 1em;
+    border-radius: 5px;
+}
+
+.card--work-history{
+    border-left: 1px solid var(--mainBorderColour);
+    margin-top: 3em;
+    margin-bottom: 3em;
+    padding-left: 2em;
+}
+
+.line-break{
+    background-color: var(--mainBorderColour);
+    height: 1px;
+}
+
+.card--project{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-top: 1px solid var(--mainBorderColour);
+}
+
+.card--project a{
+    color: var(--mainTextColour);
+    transition: 0.3s;
+}
+
+.card--project a:hover{
+    color: var(--mainLinkColour);
+}
+
+@media(max-width:600px) {
+    #wrapper--hero{
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    #profile-pic{
+        width: 200px;
+        height: 200px;
+    }
+
+    .section--page{
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    .card--work-history{
+        border-left: none;
+        padding-left: 0;
+    }
+}
+
