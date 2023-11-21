@@ -13,10 +13,17 @@
     color: var(--mainTextColour);
 }
 
-body{
-    background-color: var(--mainBgColour);
-}
+/* body{
+    background: radial-gradient(circle at 50% 25%,rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+} */
 
+body {
+    background: radial-gradient(circle at -9% 50%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 15%,
+    rgb(255, 163, 77) 15%, rgb(255, 163, 77) 25%, rgb(22, 35, 43) 25%, transparent),
+    radial-gradient(circle at 104.5% 0%, rgb(255, 124, 0) 0%, rgb(255, 124, 0) 7.5%,
+    rgb(255, 163, 77) 7.5%, rgb(255, 163, 77) 12.5%, rgb(19, 30, 37) 12.5%, rgb(94, 97, 98) 66%)   
+  }
+  
 p, span, li{
     color: var(--secondaryTextColour);
     font-size: 1em;
@@ -67,6 +74,10 @@ li{
 
 #email{
     color: var(--mainTextColour);
+}
+
+#phone{
+    color: var(--mainTextColour)
 }
 
 #socials--list{
