@@ -80,6 +80,10 @@ li{
     color: var(--mainTextColour)
 }
 
+#location{
+    color: var(--mainTextColour);
+}
+
 #socials--list{
     display: flex; 
     justify-content: space-between;
