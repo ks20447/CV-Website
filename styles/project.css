@@ -134,22 +134,34 @@ iframe {
     }
 }
 
-.social--menu ul {
-    height: 100%; /* Important to cover the full viewport height */
-    margin: 0;    /* Remove default margin */
+.social--menu {
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;     /* Center vertically */
+    justify-content: center; /* Centers items horizontally in the container */
+    align-items: center; /* Centers items vertically in the container */
+    width: 100%; /* Ensures the flex container takes full width of its parent */
+    height: 100px; /* Specify a height for the container */
+    margin: 0 auto; /* This will also help in centering if needed */
 }
+
+.social--menu ul {
+    display: flex;
+    justify-content: center; /* Center the list items horizontally */
+    align-items: center; /* Center the list items vertically */
+    list-style: none; /* Removes bullet points from list items */
+    padding: 0; /* Removes padding around the list */
+    width: 100%; /* Take up all available width */
+    margin: 0; /* Removes default margin */
+}
+
 .social--menu ul li {
-    list-style: none;
-    margin: 0 10px;
+    margin: 0 25px; /* Provides space between buttons */
 }
+
 .social--menu ul li .fa {
-    color: #000000;
-    font-size: 25px;
-    line-height: 50px;
-    transition: .3s;
+    font-size: 30px; /* Increase font size to make icons bigger */
+    color: #000000; /* Icon color */
+    line-height: 50px; /* Ensures the icon aligns vertically center */
+    transition: color 0.3s; /* Smooth color transition on hover */
 }
 
 .social--menu ul li .fa:hover {
@@ -157,21 +169,27 @@ iframe {
 }
 
 .social--menu ul li a {
-    position: relative;
-    display: block;
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background-color: white;
-    text-align: center;
-    transition: 0.5s;
-    transform: translate(0,0px);
-    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5);
+    display: block; /* Makes the link fill the li for easier clicking */
+    width: 50px; /* Width of the button */
+    height: 50px; /* Height of the button */
+    border-radius: 50%; /* Makes the button circular */
+    background-color: white; /* Button color */
+    color: #000000; /* Icon color */
+    display: flex; /* Apply Flexbox inside the link */
+    justify-content: center; /* Center the icon horizontally */
+    align-items: center; /* Center the icon vertically */
+    text-decoration: none; /* Removes underline from the link */
+    box-shadow: 0px 7px 5px rgba(0, 0, 0, 0.5); /* Adds shadow for better visibility */
+    transition: transform 0.5s ease, background-color 0.5s ease; /* Smooth transformation on hover */
 }
 
 .social--menu ul li a:hover {
-    transform: rotate(0deg) skew(0deg) translate(0, -10px);
+    transform: translateY(-10px); /* Raises the button on hover */
+    background-color: #9b59b6; /* Changes background color on hover */
 }
+
+
+
 
 .social--menu ul li:nth-child(1) a:hover {
     background-color: #9b59b6;
