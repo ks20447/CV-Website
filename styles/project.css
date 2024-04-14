@@ -13,10 +13,6 @@
     color: var(--mainTextColour);
 }
 
-/* body{
-    background: radial-gradient(circle at 50% 25%,rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
-} */
-
 body {
     background: radial-gradient(circle at 109% 50%, rgb(219, 152, 88) 0%, rgb(212, 136, 65) 15%,
     rgb(176, 97, 23) 15%, rgb(142, 76, 14) 25%, rgb(22, 35, 43) 25%, transparent),
@@ -57,13 +53,36 @@ h1{
     text-align: center;      /* Ensure text aligns center */
 }
 
-iframe{
-    width: 700px; /* Maintain the width */
-    height: 400px; /* Set a fixed height */
+.iframe-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #f0f0f0;
+    width: 100%; /* Take up all available width */
+    overflow: hidden; /* Prevents any overflow from breaking the layout */
+}
+
+.iframe-wrapper {
+    width: 100%; /* Responsive width */
+    position: relative;
+    padding-top: 56.25%; /* Aspect ratio for 16:9 videos */
+}
+
+iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+    .iframe-container {
+        padding: 0 10px; /* Adds some padding on smaller screens */
+    }
+
+    .iframe-wrapper {
+        padding-top: 75%; /* A taller aspect ratio can be better for mobile if needed */
+    }
 }
 
 
@@ -78,8 +97,6 @@ iframe{
     align-items: center;      /* Centers children vertically */
     height: 100%;             /* Ensures the container has enough height */
 }
-
-
 
 #wrapper--hero{
     display: flex;
