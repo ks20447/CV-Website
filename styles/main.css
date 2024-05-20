@@ -9,10 +9,10 @@
 
 @font-face {
     font-family: 'CMUSerif';
-    src: url("../../Resume/assets/fonts/CMUSerifRoman.ttf") format('truetype'),
-         url("../../Resume/assets/fonts/CMUSerifRoman.woff") format('woff'),
-         url("../../Resume/assets/fonts/CMUSerifRoman.woff2") format('woff2'),
-         url("../../Resume/assets/fonts/CMUSerifRoman.otf") format('otf');
+    src: url("https://ks20447.github.io/CV-Website/assets/fonts/CMUSerifRoman.ttf") format('truetype'),
+         url("https://ks20447.github.io/CV-Website/assets/fonts/CMUSerifRoman.woff") format('woff'),
+         url("https://ks20447.github.io/CV-Website/assets/fonts/CMUSerifRoman.woff2") format('woff2'),
+         url("https://ks20447.github.io/CV-Website/assets/fonts/CMUSerifRoman.otf") format('otf');
     font-weight: normal;
     font-style: normal;
 }
