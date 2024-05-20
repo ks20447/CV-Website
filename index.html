@@ -1,8 +1,4 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -11,17 +7,9 @@
         <title>Adam Morris</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/main.css">
+        <link rel="stylesheet" href="/styles/main.css">
     </head>
     <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-        <!-- <header>
-             <h2>Adam Morris, MEng</h2>
-        </header> -->
-
     <nav class="navbar">
         <div class="navbar-container">
         <a class="navbar-logo">Adam Morris, MEng</a>
@@ -36,7 +24,7 @@
                 <a href="https://www.instagram.com/adammorris3008/" target="_blank" class="social-icon"><i class="fa fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/in/adam-morris-eng-maths/" target="_blank" class="social-icon"><i class="fa fa-linkedin"></i></a>
                 <a href="https://github.com/ks20447" target="_blank" class="social-icon"><i class="fa fa-github"></i></a>
-                <a href="/assets/ADAM_MORRIS.pdf" target="_blank" class="social-icon"><i class="fa fa-file-pdf-o"></i></a>
+                <a href="./assets/ADAM_MORRIS.pdf" target="_blank" class="social-icon"><i class="fa fa-file-pdf-o"></i></a>
             </div>
             <button class="navbar-toggle" onclick="toggleNav()">
                 <i class="fa fa-bars"></i>
@@ -49,7 +37,7 @@
     <main>
         <section id="about" class="about-section">
             <div class="about-container">
-                <img src="/assets/images/profile_pic2.jpg" alt="Profile Picture" class="about-profile-pic">
+                <img src="./assets/images/profile_pic2.jpg" alt="Profile Picture" class="about-profile-pic">
                 <div class="about-text">
                     <h2>About Me</h2>
                     <p>I am a recent engineering graduate with a master's degree in Engineering Mathematics from the University of Bristol,
@@ -179,7 +167,7 @@
                     navbarMenu.style.display = "flex";
                 }
             }
-            
+
             function handleResize() {
                     var navbarMenu = document.getElementById("navbarMenu");
                     if (window.innerWidth > 768) {
