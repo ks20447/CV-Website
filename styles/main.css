@@ -161,6 +161,10 @@ a {
         margin-bottom: 0;
     }
 
+    .experience-box {
+        width: 40%;
+    }
+
     .about-text {
         max-width: none;
     }
@@ -168,6 +172,14 @@ a {
 
 @media (max-width: 768px) {
     /* Navigation bar adjustments for smaller screens */
+    .navbar {
+        width: 100vw;
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+    }
+
     .navbar-menu {
         display: none;
         flex-direction: column;
@@ -181,6 +193,7 @@ a {
 
     .navbar-menu li {
         margin: 5px 20px;
+        width: 100vw;
     }
 
     .navbar-toggle {
@@ -204,7 +217,7 @@ a {
     }
 
     .experience-box {
-        width: 100%;
+        width: 80%;
     }
 
     /* Projects section adjustments for smaller screens */
@@ -224,6 +237,22 @@ a {
 
     .contact-info {
         max-width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .experience-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .projects-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project {
+        width: 100%;
     }
 }
 
@@ -251,7 +280,6 @@ a {
     border: 2px solid var(--navColour);
     border-radius: 10px;
     padding: 20px;
-    width: 40%; /* Adjust box width for responsiveness */
 }
 
 .experience-box h2 {
