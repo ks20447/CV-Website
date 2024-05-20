@@ -9,12 +9,10 @@
 
 @font-face {
     font-family: 'CMUSerif';
-    src: url('/assets/fonts/CMU\ Serif\ Roman.ttf') format('truetype'),
-         url('/assets/fonts/CMU\ Serif\ Roman.woff') format('woff'),
-         url('/assets/fonts/CMU\ Serif\ Roman.woff2') format('woff2'),
-         url('/assets/fonts/CMU\ Serif\ Roman.otf') format('otf');
-         
-
+    src: url('./assets/fonts/CMUSerifRoman.ttf') format('truetype'),
+         url('./assets/fonts/CMUSerifRoman.woff') format('woff'),
+         url('./assets/fonts/CMUSerifRoman.woff2') format('woff2'),
+         url('./assets/fonts/CMUSerifRoman.otf') format('otf');
     font-weight: normal;
     font-style: normal;
 }
