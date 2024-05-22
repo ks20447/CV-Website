@@ -313,6 +313,15 @@ a {
     margin-bottom: 10px;
 }
 
+.project a {
+    font-size: 15pt;
+    color: var(--secondaryBgColour);
+}
+
+.project a:hover {
+    color: var(--navColour);
+}
+
 
 .project-links iframe {
     margin-top: 10px;
