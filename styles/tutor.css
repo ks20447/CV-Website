@@ -1,0 +1,468 @@
+:root {
+    --mainTextColour: #000000;
+    --secondaryTextColour: #ffffff;
+    --mainBgColour: #ffffff;
+    --secondaryBgColour: #b3b3b3;
+    --navColour: #444444;
+    --highlightColour: #969696;
+}
+
+@font-face {
+    font-family: 'CMUSerif';
+    src: url("https://ks20447.github.io/CV-Website/assets/fonts/CMUSerifRoman.ttf") format('truetype'),
+        url("https://ks20447.github.io/CV-Website/assets/fonts/CMUSerifRoman.woff") format('woff'),
+        url("https://ks20447.github.io/CV-Website/assets/fonts/CMUSerifRoman.woff2") format('woff2'),
+        url("https://ks20447.github.io/CV-Website/assets/fonts/CMUSerifRoman.otf") format('otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+header {
+    background-color: var(--mainBgColour);
+    text-align: center;
+    font-size: 25px;
+    color: var(--mainTextColour);
+    border-radius: 10px;
+}
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'CMUSerif';
+    scroll-behavior: smooth;
+    /* Enables smooth scrolling */
+}
+
+a {
+    text-decoration: none;
+    /* Remove underline */
+    color: inherit;
+    /* Inherit color from parent */
+}
+
+.page-title {
+    text-align: center;
+    padding-top: 60px;
+    color: var(--mainTextColour);
+    /* Or any other color you prefer */
+    font-style: italic;
+}
+
+.navbar {
+    background-color: var(--navColour);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.navbar-logo {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    color: var(--secondaryTextColour);
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-menu li {
+    margin: 0 15px;
+}
+
+.navbar-menu a {
+    color: var(--secondaryTextColour);
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.navbar-menu a:hover {
+    color: var(--highlightColour);
+}
+
+.navbar-social {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-toggle {
+    display: none;
+    font-size: 30px;
+    padding-left: 20px;
+    color: var(--secondaryTextColour);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.social-icon {
+    color: var(--secondaryTextColour);
+    /* Set the color of the icons */
+    font-size: 30px;
+    /* Set the size of the icons */
+    margin-left: 20px;
+}
+
+/* Hover effect for the icons */
+.social-icon:hover {
+    color: var(--highlightColour);
+    /* Change color on hover */
+}
+
+.about-section {
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    background-color: var(--mainBgColour);
+    scroll-margin-top: 60px
+}
+
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1200px;
+    width: 100%;
+}
+
+.about-profile-pic {
+    width: 300px;
+    /* Increased size */
+    height: 300px;
+    border-radius: 50%;
+    /* Makes the image circular */
+    margin-bottom: 20px;
+    border: 2px solid var(--secondaryBgColour);
+}
+
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1.2em;
+    line-height: 1.6;
+}
+
+.tailored-concept-pic {
+    max-width: 300px;
+    margin-left: 30px;
+    border-radius: 50%;
+    /* Or keep it as 50% if you want it round */
+}
+
+@media (min-width: 768px) {
+    .about-container {
+        flex-direction: row;
+        align-items: center;
+        /* Center vertically */
+        text-align: justify;
+    }
+
+    .about-profile-pic {
+        margin-right: 40px;
+        /* Increased margin for better spacing */
+        margin-bottom: 0;
+    }
+
+    .experience-box {
+        width: 40%;
+    }
+
+    .about-text {
+        max-width: none;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* Navigation bar adjustments for smaller screens */
+    .navbar {
+        width: 100vw;
+    }
+
+    .navbar-logo {
+        font-size: 20px;
+    }
+
+    .navbar-menu {
+        display: none;
+        flex-direction: column;
+        position: fixed;
+        right: 0;
+        top: 60px;
+        background-color: var(--navColour);
+        width: 100%;
+        padding: 10px;
+    }
+
+    .navbar-menu li {
+        margin: 5px 20px;
+        width: 100vw;
+    }
+
+    .navbar-toggle {
+        display: block;
+    }
+
+    /* About section adjustments for smaller screens */
+    .about-section {
+        padding: 30px 20px;
+    }
+
+    .about-profile-pic {
+        width: 200px;
+        height: 200px;
+    }
+
+    /* Experience section adjustments for smaller screens */
+    .experience-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .experience-box {
+        width: 80%;
+    }
+
+    /* Projects section adjustments for smaller screens */
+    .projects-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .project {
+        width: 100%;
+    }
+
+    /* Contact section adjustments for smaller screens */
+    .contact-section {
+        padding: 30px 20px;
+    }
+
+    .contact-info {
+        max-width: 100%;
+    }
+
+    .projects-section .project {
+        width: 100%;
+        /* Full width on small screens */
+        margin: 10px 0;
+        /* Adjust margin for single column layout */
+    }
+}
+
+.experience-section {
+    padding: 60px 20px;
+    background-color: var(--secondaryBgColour);
+    /* Background color for the section */
+}
+
+.experience-section h2 {
+    font-size: 2em;
+    padding-left: 50px;
+}
+
+.experience-container {
+    max-width: 1200px;
+    /* Set maximum width */
+    margin: 0 auto;
+    /* Center the container horizontally */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    /* Gap between experience boxes */
+}
+
+.experience-box {
+    background-color: var(--mainBgColour);
+    border: 2px solid var(--navColour);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.experience-box h2 {
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+.location {
+    font-style: italic;
+    color: var(--navColour);
+    margin-bottom: 10px;
+}
+
+.description {
+    margin-bottom: 15px;
+}
+
+.skills-list {
+    list-style: disc;
+    margin-left: 20px;
+}
+
+.skills-list li {
+    margin-bottom: 5px;
+}
+
+.projects-section {
+    position: relative;
+    padding: 20px 20px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    /* Stack title and projects vertically */
+    align-items: center;
+    /* Center the items horizontally */
+    color: #fff;
+    /* Text color, adjust as needed */
+    scroll-margin-top: 60px
+}
+
+.projects-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('../assets/images/math_background.jpeg') no-repeat center center/cover;
+    /* Adjust the path to your image */
+    opacity: 0.5;
+    /* Adjust the opacity as needed */
+    z-index: -1;
+    /* Ensure the pseudo-element is behind the content */
+    filter: brightness(25%);
+    /* Optional: adjust brightness for better contrast */
+}
+
+.projects-title {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 20px;
+    /* Adjust as needed for spacing */
+    color: var(--secondaryTextColour);
+    /* Or any other color you prefer */
+}
+
+.project {
+    width: 100%;
+    /* Ensure projects take full width */
+    max-width: 800px;
+    /* Optionally, set a max-width for better readability */
+    margin-bottom: 40px;
+    /* Space between projects */
+    padding: 10px;
+    /* Add padding for spacing */
+    box-sizing: border-box;
+    /* Include padding in the width calculation */
+    border: 1px solid #ddd;
+    /* Add a border to projects */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent background for better text readability */
+    border-radius: 10px;
+    /* Optional: add border-radius for rounded corners */
+}
+
+.project h2 {
+    margin-bottom: 10px;
+}
+
+.project a {
+    font-size: 15pt;
+    color: var(--secondaryBgColour);
+}
+
+.project a:hover {
+    color: var(--navColour);
+}
+
+
+.project-links iframe {
+    margin-top: 10px;
+    width: 100%;
+}
+
+.project-list {
+    list-style-type: "🎯";
+}
+
+.project-list-pricing {
+    list-style-type: "💰";
+}
+
+
+.projects-section .project {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin: 10px;
+}
+
+
+.youtube-video {
+    height: 300px;
+}
+
+.youtube-video iframe {
+    width: 100%;
+    height: 100%;
+
+}
+
+.contact-section {
+    padding: 30px 20px;
+    text-align: center;
+    background-color: var(--secondaryBgColour);
+    overflow: hidden;
+    /* Hide overflow content */
+}
+
+.contact-info {
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+    /* Add margin between contact information */
+}
+
+main {
+    padding-top: 10px;
+    /* Height of the navbar */
+}
+
+section {
+    padding: 20px 20px;
+    min-height: 25vh;
+}
+
+section h1 {
+    margin: 0;
+}
