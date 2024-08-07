@@ -25,13 +25,13 @@ header {
     color: var(--secondaryTextColour);
     text-shadow:
         1px 1px 0 var(--shadowColour),
-            /* Outline to the right-bottom */
+        /* Outline to the right-bottom */
         -1px -1px 0 var(--shadowColour),
         /* Outline to the left-top */
         -1px 1px 0 var(--shadowColour),
         /* Outline to the left-bottom */
         1px -1px 0 var(--shadowColour);
-        /* Outline to the right-top */
+    /* Outline to the right-top */
 }
 
 header::before {
@@ -411,14 +411,14 @@ a {
     color: var(--secondaryTextColour);
     /* Or any other color you prefer */
     text-shadow:
-            1px 1px 0 var(--shadowColour),
-            /* Outline to the right-bottom */
-            -1px -1px 0 var(--shadowColour),
-            /* Outline to the left-top */
-            -1px 1px 0 var(--shadowColour),
-            /* Outline to the left-bottom */
-            1px -1px 0 var(--shadowColour);
-        /* Outline to the right-top */
+        1px 1px 0 var(--shadowColour),
+        /* Outline to the right-bottom */
+        -1px -1px 0 var(--shadowColour),
+        /* Outline to the left-top */
+        -1px 1px 0 var(--shadowColour),
+        /* Outline to the left-bottom */
+        1px -1px 0 var(--shadowColour);
+    /* Outline to the right-top */
 }
 
 .projects-sub-title {
